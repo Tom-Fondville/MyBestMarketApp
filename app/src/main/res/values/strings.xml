@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MyBestMarketApp</string>
+    <string name="main_logo_description">Main Logo</string>
+    <string name="back_button_content">bouton de retour</string>
+    <string name="header_account_button_description">account button</string>
+    <string name="main_cardButton_textView">Carte</string>
+    <string name="main_OffresButton_textView">Offres</string>
+    <string name="main_magasinsButton_textView">Magasins</string>
 </resources>
