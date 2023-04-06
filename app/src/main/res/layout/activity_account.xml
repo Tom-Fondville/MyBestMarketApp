@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountActivity">
+
+    <include
+        layout="@layout/layout_header_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextNom"
+                style="@style/EditTextLogin"
+                android:ems="10"
+                android:hint="@string/nom_input_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextPrenom"
+                style="@style/EditTextLogin"
+                android:ems="10"
+                android:hint="@string/pr_nom_input_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                style="@style/EditTextLogin"
+                android:ems="10"
+                android:hint="@string/email_input_hint"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                style="@style/EditTextLogin"
+                android:ems="10"
+                android:hint="@string/address_input_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextCodePostal"
+                style="@style/EditTextLogin"
+                android:ems="10"
+                android:hint="@string/code_postal_input_hint"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/editTextVille"
+                style="@style/EditTextLogin"
+                android:ems="10"
+                android:hint="@string/ville_input_hint"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/updateButton"
+                style="@style/BasicButton"
+                android:layout_marginBottom="40dp"
+                android:text="@string/update_button" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

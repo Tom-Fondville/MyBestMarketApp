@@ -22,21 +22,21 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textViewTab1"
+            android:id="@+id/carteBtn"
             style="@style/textViewTab"
             android:background="@color/teal_200"
             android:text="@string/main_cardButton_textView"
             tools:ignore="TextContrastCheck" />
 
         <TextView
-            android:id="@+id/textViewTab2"
+            android:id="@+id/offresBtn"
             style="@style/textViewTab"
             android:background="@color/teal_500"
             android:text="@string/main_OffresButton_textView"
             tools:ignore="TextContrastCheck" />
 
         <TextView
-            android:id="@+id/textViewTab3"
+            android:id="@+id/magasinsBtn"
             style="@style/textViewTab"
             android:background="@color/teal_700"
             android:text="@string/main_magasinsButton_textView"

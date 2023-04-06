@@ -11,8 +11,12 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
-            val newIntent = Intent(application, MainActivity::class.java)
-            startActivity(newIntent)
+            val mail = (application as MarketApplication).readSharedPref("mail")
+            if (mail.isEmpty()) {
+                startActivity(Intent(application, CreateAccountActivity::class.java))
+            } else {
+                startActivity(Intent(application, MainActivity::class.java))
+            }
         }, 2000)
     }
 }
