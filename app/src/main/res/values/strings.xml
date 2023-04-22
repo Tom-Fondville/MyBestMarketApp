@@ -27,4 +27,6 @@
     <string name="header_details_title">TITLE</string>
     <string name="account_title">Compte</string>
     <string name="update_button">J\'enregistre les modifications</string>
+    <string name="my_best_market_title">My Best Market</string>
+    <string name="image_du_store_description">Image du store</string>
 </resources>

@@ -9,10 +9,11 @@ class MainActivity : BaseActivity() {
 
     val carteFragment = CarteFragment.newInstance("", "")
     val offreFragment = OffreFragment.newInstance("", "")
+    val magasinsFragment = MagasinsFragment.newInstance("", "")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setHeaderTitle("TROUVER UN LOGO")
+        setHeaderTitle("MyBestMarket")
         setAccoutOnclick()
 
         showCarteFragment()
@@ -27,6 +28,10 @@ class MainActivity : BaseActivity() {
             showOffreFragment()
         }
 
+        val magasinsBtn = findViewById<TextView>(R.id.magasinsBtn)
+        magasinsBtn.setOnClickListener {
+            showMagasinsFragment()
+        }
 
     }
 
@@ -44,6 +49,14 @@ class MainActivity : BaseActivity() {
         val fragmentTra = frManager.beginTransaction()
         fragmentTra.addToBackStack("Offre")
         fragmentTra.replace(R.id.fragmentContent, offreFragment)
+        fragmentTra.commit()
+    }
+
+    fun showMagasinsFragment() {
+        val frManager = supportFragmentManager
+        val fragmentTra = frManager.beginTransaction()
+        fragmentTra.addToBackStack("Magasins")
+        fragmentTra.replace(R.id.fragmentContent, magasinsFragment)
         fragmentTra.commit()
     }
 }
