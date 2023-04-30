@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
 
     <application
         android:name=".MarketApplication"
@@ -14,6 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyBestMarketApp"
         tools:targetApi="31">
+
+
+        <!-- Non focntionnel
+        <activity
+            android:name=".ScanActivity"
+            android:exported="false" />
+            -->
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

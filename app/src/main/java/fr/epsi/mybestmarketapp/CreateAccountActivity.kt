@@ -12,7 +12,7 @@ class CreateAccountActivity : BaseActivity() {
         val qrCodeBtn = findViewById<Button>(R.id.buttonQrCode)
         qrCodeBtn.setOnClickListener { view ->
             //TODO faire activite QrCode
-            val intent = Intent(this, FormActivity::class.java)
+            val intent = Intent(this, /*Non Fonctionnel ScanActivity*/ FormActivity::class.java)
             startActivity(intent)
         }
 
